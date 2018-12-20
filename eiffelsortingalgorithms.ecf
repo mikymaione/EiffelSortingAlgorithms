@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <system xmlns="http://www.eiffel.com/developers/xml/configuration-1-18-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-18-0 http://www.eiffel.com/developers/xml/configuration-1-18-0.xsd" name="eiffelsortingalgorithms" uuid="EB8C39A4-BC2B-47F3-9E76-0ACAE56843B4">
 	<target name="eiffelsortingalgorithms">
-		<root cluster="root_cluster" class="EIFFELSORTINGALGORITHMS_APP" feature="make"/>
+		<root class="EIFFELSORTINGALGORITHMS_APP" feature="make"/>
 		<file_rule>
 			<exclude>/CVS$</exclude>
 			<exclude>/EIFGENs$</exclude>
@@ -12,15 +12,8 @@
 			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
 		</option>
 		<setting name="console_application" value="true"/>
-		<setting name="dotnet_naming_convention" value="True"/>
-		<setting name="msil_clr_version" value="v2.0.50727"/>
-		<setting name="msil_generation_type" value="exe"/>
-		<capability>
-			<concurrency support="none"/>
-		</capability>
-		<precompile name="base_pre" location="$ISE_PRECOMP\base-safe.ecf"/>
-		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
-		<assembly name="mscorlib" location="$ISE_DOTNET_FRAMEWORK\mscorlib.dll"/>
-		<cluster name="root_cluster" location=".\" recursive="true"/>
+		<precompile name="base_pre" location="$ISE_PRECOMP/base-scoop-safe.ecf"/>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<cluster name="eiffelsortingalgorithms" location=".\" recursive="true"/>
 	</target>
 </system>
